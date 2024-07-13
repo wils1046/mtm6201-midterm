@@ -1,0 +1,456 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* My CSS Style */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #f3f0e9;
+}
+
+p, a {
+    font-family: "Karla", sans-serif;
+}
+
+h1, h2, h3, nav {
+    font-family: "Lato", sans-serif;
+}
+
+h1, h2, h3 {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2.027rem;
+}
+
+h2 {
+    font-size: 1.802rem;
+}
+
+h3 {
+    font-size: 1.424rem;
+    margin-top: 20px;
+    line-height: 30px;
+}
+
+p {
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+section {
+    display: block;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+img {
+    display: inline-block;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+header {
+    background-color: black;
+}
+
+.brand-nav {
+    text-align: center;
+    padding-top: 23px;
+}
+
+.navbar {
+    padding-top: 11px;
+}
+
+.navlink {
+    padding: 20px;
+    font-weight: 900;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+.explore {
+    background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url(../images/hero-background.jpg);
+    background-position: 0,0,50%,45%;
+    background-size: auto, cover;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.e.container {
+    max-width: 85%;
+    color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    font-weight: 900;
+    line-height: 1.2;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.e-par {
+    padding-left: 40px;
+    padding-right: 40px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+p{
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.mbutton {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border: 2px solid white;
+    padding: 15px 40px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.welcome {
+    padding: 80px 10px;
+    padding-bottom: 0;
+}
+
+.orange-left {
+    color: #d69e3d;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+h2 {
+    text-align: left;
+    max-width: 600px;
+    margin-top: 10px;
+    line-height: 1.1;
+}
+
+.five-images {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    grid-auto-columns: 1fr;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.image-flex {
+    grid-area: span 2 / span 2 / span 2 / span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.offer {
+    padding: 80px 10px;
+}
+
+.o.container {
+    display: block;
+}
+
+.orange-center{
+    color: #d69e3d;
+    text-align: center;
+}
+
+.h2-center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+}
+
+.icon-flex {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    grid-column-gap: 60px;
+    grid-row-gap: 60px;
+}
+
+/* .offer-flex {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 300px;
+} */
+
+.p-offer {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu-location {
+    background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url(../images/coffee-shop.jpeg);
+    background-position-x: 0px,50%;
+    background-position-y: 0px, center;
+    background-size: auto, cover;
+    padding: 80px 10px;
+}
+
+.ml.container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu-location-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-auto-columns: 1fr;
+}
+
+.our-menu {
+    color: #ffffff;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.h2-wcenter {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+}
+
+.wcbutton {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border: 2px solid white;
+    font-weight: 800;
+    margin-top: 20px;
+    padding: 10px 30px;
+    cursor: pointer;
+    line-height: inherit;
+}
+
+.locations {
+    color: white;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 60px;
+}
+
+.tbutton {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid white;
+    font-weight: 800;
+    margin-top: 20px;
+    padding: 10px 30px;
+    cursor: pointer;
+    line-height: inherit;
+}
+
+.story {
+    display: block;
+    padding: 80px 10px;
+}
+
+.s.container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sgrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-auto-columns: 1fr;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.sflex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.pflex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.bbutton {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    font-weight: 800;
+    margin-top: 8px;
+    padding: 10px 30px;
+}
+
+.testimonials {
+    display: block;
+    background-color: black;
+    padding: 80px 10px;
+    padding-bottom: 0px;
+}
+
+.t.container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.h2-wleft {
+    color: white;
+}
+
+.tgrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-auto-columns: 1fr;
+    margin-top: 40px;
+}
+
+.tsec.t1 {
+    color: white;
+    background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url(../images/testimonial-1.jpeg);
+    background-position-x: 0px, 50%;
+    background-position-y: 0px, center;
+    background-size: auto, cover;
+}
+
+.tsec {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 480px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.tsec.t2 {
+    color: white;
+    background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url(../images/testimonial-2.jpeg);
+    background-position-x: 0px, 50%;
+    background-position-y: 0px, 0px;
+    background-size: auto, cover;
+}
+
+.tsec.t3 {
+    color: white;
+    background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url(../images/testimonial-3.jpeg);
+    background-position-x: 0px, 0px;
+    background-position-y: 0px, 0px;
+    background-size: auto, cover;
+}
+
+footer {
+    display: block;
+    background-color: black;
+    padding-bottom: 40px;
+    padding: 80px 10px;
+}
+
+.f.container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px solid rgba(255, 255, 255, .26);
+}
+
+.ftr {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
