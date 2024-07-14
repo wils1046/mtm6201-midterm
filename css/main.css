@@ -57,6 +57,10 @@ html {
     background-color: #f3f0e9;
 }
 
+body {
+    line-height: 20px;
+}
+
 p, a {
     font-family: "Karla", sans-serif;
 }
@@ -85,12 +89,16 @@ h3 {
 }
 
 p {
-    font-size: 1rem;
+    font-size: 16px;
     margin-top: 0;
     margin-bottom: 10px;
 }
 
 section {
+    display: block;
+}
+
+nav {
     display: block;
 }
 
@@ -118,12 +126,17 @@ header {
 }
 
 .navlink {
+    font-size: .8rem;
     padding: 20px;
     font-weight: 900;
     color: white;
     text-decoration: none;
     display: inline-block;
     position: relative;
+}
+
+.navlink:hover {
+    color: #966f2c;
 }
 
 .explore {
@@ -172,6 +185,11 @@ p{
     padding: 15px 40px;
     font-weight: 800;
     cursor: pointer;
+}
+
+.mbutton:hover {
+    color: white;
+    background-color: #966f2c;
 }
 
 .welcome {
@@ -242,11 +260,11 @@ h2 {
     grid-row-gap: 60px;
 }
 
-/* .offer-flex {
+.offer-flex {
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 300px;
-} */
+}
 
 .p-offer {
     max-width: 90%;
@@ -304,6 +322,11 @@ h2 {
     line-height: inherit;
 }
 
+.wcbutton:hover {
+    color: white;
+    background-color: #966f2c;
+}
+
 .locations {
     color: white;
     text-align: center;
@@ -323,6 +346,11 @@ h2 {
     padding: 10px 30px;
     cursor: pointer;
     line-height: inherit;
+}
+
+.tbutton:hover {
+    color: black;
+    background-color: white;
 }
 
 .story {
@@ -371,6 +399,10 @@ h2 {
     font-weight: 800;
     margin-top: 8px;
     padding: 10px 30px;
+}
+
+.bbutton:hover {
+    background-color: #966f2c;
 }
 
 .testimonials {
@@ -453,4 +485,122 @@ footer {
     color: white;
     text-align: center;
     margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 2.986rem;
+    }
+
+    h2 {
+        font-size: 2.488rem;
+    }
+
+    h3 {
+        font-size: 1.728rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .brand-nav {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .bn.container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .navbar {
+        position: relative;
+        float: right;
+    }
+
+    .welcome {
+        padding-top: 120px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 0px;
+    }
+
+    .w.container {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .five-images {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .p-offer.p-half {
+        max-width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .menu-location {
+        padding-top: 120px;
+        padding-bottom: 120px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .menu-location-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .locations {
+        color: white;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 0;
+    }
+
+    .story {
+        padding-top: 120px;
+        padding-bottom: 120px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .sgrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    .bbutton {
+        padding: 15px 40px;
+    }
+
+    .testimonials {
+        padding-top: 120px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .tgrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    footer {
+        padding-top: 120px;
+        padding-bottom: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
