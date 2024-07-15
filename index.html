@@ -17,10 +17,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+<!-- SKIP LINKS -->
+<ul class="skip-links">
+    <li><a href="#nav">Skip to navigation</a></li>
+    <li><a href="#explore-menu1">Skip to main explore our menu button</a></li>
+    <li><a href="#welcome-page">Skip to welcome to my coffee house</a></li>
+    <li><a href="#visit-us">Skip to why visit us</a></li>
+    <li><a href="#menu-locations">Skip to our menu and locations</a></li>
+    <li><a href="#about-us">Skip to about us</a></li>
+    <li><a href="#customers-testimonials">Skip to customer's testimonials</a></li>
+</ul>
+
 <!-- NAVIGATION -->
-    <header class="brand-nav">
+    <header id="nav" class="brand-nav">
         <div class="bn container">
-            <a href="#" class="logo"><img src="images/my-coffee-shop-logo.svg" alt="my coffee house logo" width="225"></a>
+            <a href="#" class="logo"><img src="images/my-coffee-shop-logo.svg" alt="my coffee house logo" width="225" class="ilogo"></a>
             <nav role="navigation" class="navbar">
                 <a href="#" class="navlink">ABOUT US</a>
                 <a href="#" class="navlink">MENU</a>
@@ -31,15 +42,15 @@
 
 <main>
 <!-- EXPLORE OUR MENU 1 -->
-    <section class="explore">
+    <section id="explore-menu1" class="explore" role="region">
         <div class="e container">
-            <h1>EXPERIENCE COFFEE LIKE NEVER BEFORE</h1>
+            <h1 class="eh1">EXPERIENCE COFFEE LIKE NEVER BEFORE</h1>
             <p class="e-par">We craft more than beverages; we curate memories, one flavorful moment at a time. Embrace the aroma and let every visit be a chapter in your coffee story.</p>
             <a href="#" class="mbutton">EXPLORE OUR MENU</a>
         </div>
     </section>
 <!-- WELCOME -->
-    <section class="welcome">
+    <section id="welcome-page" class="welcome" role="region">
         <div class="w container">
             <div>
                 <p class="orange-left">WELCOME TO MY COFFEE HOUSE</p>
@@ -55,7 +66,7 @@
         </div>
     </section>
 <!-- OFFERS -->
-    <section class="offer">
+    <section id="visit-us" class="offer" role="region">
         <div class="o container">
             <div>
                 <p class="orange-center">WHAT WE OFFER</p>
@@ -82,7 +93,7 @@
         </div>
     </section>
 <!-- MENU 2 AND LOCATION -->
-    <section class="menu-location">
+    <section id="menu-locations" class="menu-location" role="region">
         <div class="ml container">
             <div class="menu-location-grid">
                 <div class="our-menu">
@@ -99,7 +110,7 @@
         </div>
     </section>
 <!-- ABOUT US -->
-    <section class="story">
+    <section id="about-us" class="story" role="region">
         <div class="s container">
             <div class="sgrid">
                 <div class="sflex">
@@ -116,7 +127,7 @@
         </div>
     </section>
 <!-- CUSTOMERS -->
-    <section class="testimonials">
+    <section id="customers-testimonials" class="testimonials" role="region">
         <div class="t container">
             <div class="customers">
                 <p class="orange-left">TESTIMONIALS</p>
@@ -139,7 +150,7 @@
         </div>
     </section>
 <!-- FOOTER -->
-    <footer>
+    <footer role="contentinfo">
         <div class="f container">
             <p class="ftr">&copy; My Coffee Company 2024</p>
         </div>

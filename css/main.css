@@ -49,6 +49,28 @@ table {
 
 /* My CSS Style */
 
+/* Skip Links */
+
+.skip-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+.skip-links a {
+    background-color: black;
+    color: white;
+    padding: .5em 1em;
+    position: absolute;
+    top: -3em;
+}
+  
+.skip-links a:focus {
+    top: 0;
+}
+
+/* Main Settings */
+
 * {
     box-sizing: border-box;
 }
@@ -116,13 +138,35 @@ header {
     background-color: black;
 }
 
+/* Mobile Screen */
+
+/* Navigation */
+
 .brand-nav {
-    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.bn.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo {
+    padding-left: 10px;
+}
+
+.ilogo {
     padding-top: 23px;
+    padding-bottom: 11px;
 }
 
 .navbar {
-    padding-top: 11px;
+    padding-top: 0;
 }
 
 .navlink {
@@ -133,17 +177,20 @@ header {
     text-decoration: none;
     display: inline-block;
     position: relative;
+    text-align: left;
 }
 
 .navlink:hover {
     color: #966f2c;
 }
 
+/* Explore Our Menu with background image and opacity */
+
 .explore {
     background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url(../images/hero-background.jpg);
     background-position: 0,0,50%,45%;
     background-size: auto, cover;
-    height: 500px;
+    height: 440px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -192,6 +239,8 @@ p{
     background-color: #966f2c;
 }
 
+/* Welcome to my coffee house and five images */
+
 .welcome {
     padding: 80px 10px;
     padding-bottom: 0;
@@ -229,12 +278,16 @@ h2 {
     align-items: flex-start;
 }
 
+/* What We Offer and three SVG icons */
+
 .offer {
     padding: 80px 10px;
 }
 
 .o.container {
     display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .orange-center{
@@ -271,6 +324,8 @@ h2 {
     margin-left: auto;
     margin-right: auto;
 }
+
+/* Menu and Locations section */
 
 .menu-location {
     background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url(../images/coffee-shop.jpeg);
@@ -353,6 +408,8 @@ h2 {
     background-color: white;
 }
 
+/* About Us and Learn More button */
+
 .story {
     display: block;
     padding: 80px 10px;
@@ -404,6 +461,8 @@ h2 {
 .bbutton:hover {
     background-color: #966f2c;
 }
+
+/* Customer's Testimonials about our coffee */
 
 .testimonials {
     display: block;
@@ -467,6 +526,8 @@ h2 {
     background-size: auto, cover;
 }
 
+/* Footerrrr */
+
 footer {
     display: block;
     background-color: black;
@@ -487,7 +548,12 @@ footer {
     margin-top: 10px;
 }
 
+/* Tablet Screen */
+
 @media screen and (min-width: 768px) {
+
+/* Main Settings for tablet */
+
     h1 {
         font-size: 2.986rem;
     }
@@ -504,24 +570,28 @@ footer {
         font-size: 1rem;
     }
 
+/* Navigation adjustments for tablet */
+
     .brand-nav {
         padding-left: 20px;
         padding-right: 20px;
     }
 
-    .bn.container {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-items: center;
-        margin-left: auto;
-        margin-right: auto;
+    .navbar {
+        padding-top: 0;
     }
 
-    .navbar {
-        position: relative;
-        float: right;
+/* Explore our Menu adjustments for tablet */
+
+    .explore {
+        height: 500px;
     }
+
+    .e.container {
+        max-width: 728px;
+    }
+
+/* Welcome to my coffee house adjustments for tablet */
 
     .welcome {
         padding-top: 120px;
@@ -542,11 +612,22 @@ footer {
         grid-template-rows: auto auto;
     }
 
+/* what we offer adjustments for tablet */
+
+    .offer {
+        padding-top: 120px;
+        padding-bottom: 120px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
     .p-offer.p-half {
         max-width: 50%;
         margin-left: auto;
         margin-right: auto;
     }
+
+/* menu and locations adjustments for tablet */
 
     .menu-location {
         padding-top: 120px;
@@ -568,6 +649,8 @@ footer {
         margin: 0;
     }
 
+/* about us adjustments for tablet */
+
     .story {
         padding-top: 120px;
         padding-bottom: 120px;
@@ -585,6 +668,8 @@ footer {
         padding: 15px 40px;
     }
 
+/* user's testimonials adjustments for tablet */
+
     .testimonials {
         padding-top: 120px;
         padding-left: 20px;
@@ -597,10 +682,140 @@ footer {
         grid-template-rows: auto;
     }
 
+/* footer adjustments for tablet */
+
     footer {
         padding-top: 120px;
         padding-bottom: 40px;
         padding-left: 20px;
         padding-right: 20px;
+    }
+}
+
+/* Desktop Screen */
+
+@media screen and (min-width: 1100px) {
+
+/* Main settings for desktop */
+
+    h1 {
+        font-size: 3.815rem;
+    }
+
+    h2 {
+        font-size: 3.052rem;
+    }
+
+    h3 {
+        font-size: 1.953rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+/* Navigation adjustments for desktop */
+
+    .bn.container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .brand-nav {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .ilogo {
+        padding-top: 20px;
+    }
+
+/* Explore our menu adjustments for desktop */
+
+    .explore {
+        height: 100vh;
+    }
+
+    .e.container {
+        max-width: 940px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .eh1 {
+        max-width: 70%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .e-par {
+        max-width: 70%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+/* Welcome to my coffee house adjustments for desktop */
+
+    .welcome {
+        padding-top: 120px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 0px;
+    }
+
+/* What we offer adjustments for desktop */
+
+    .offer {
+        padding: 120px 40px;
+    }
+
+    .p-offer {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .p-offer.p-half {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+/* menu and locations adjustments for desktop */
+
+    .menu-location {
+        padding-top: 120px;
+        padding-bottom: 120px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+/* About us adjustments for desktop */
+
+    .story {
+        padding-top: 120px;
+        padding-bottom: 120px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+/* customer's testimonials adjustments for desktop */
+
+    .testimonials {
+        padding-top: 120px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+/* footer adjustments for desktop */
+
+    footer {
+        padding-top: 120px;
+        padding-bottom: 40px;
+        padding-left: 40px;
+        padding-right: 40px;
     }
 }
