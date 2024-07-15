@@ -83,11 +83,11 @@ body {
     line-height: 20px;
 }
 
-p, a {
+p, .mbutton, .wcbutton, .tbutton, .bbutton {
     font-family: "Karla", sans-serif;
 }
 
-h1, h2, h3, nav {
+h1, h2, h3, .navlink {
     font-family: "Lato", sans-serif;
 }
 
